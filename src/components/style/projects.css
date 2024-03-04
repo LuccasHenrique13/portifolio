@@ -1,0 +1,101 @@
+.titleprojects{
+  text-align: center;
+  font-size: 30px;
+}
+
+.projects{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 60px 0 0 0; 
+  margin-bottom: 80px;
+  white-space: nowrap;
+}
+
+.projects:hover .projects-slide{
+  animation-play-state: paused;
+}
+
+.linkProjects {
+  cursor: pointer;
+  position: relative;
+}
+
+.linkProjects:hover img {
+  transition: 0.6s;
+  height: 55vh;
+}
+
+.linkProjects:hover .overlay {
+  opacity: 1;
+}
+
+.projects-slide {
+  display: flex;
+  flex-direction: row;
+  animation: 20s slide infinite linear;
+}
+
+.projects-slide img {
+  height: 50vh;
+  margin: 0 40px;
+  border-radius: 20px;
+  transition: 0.6s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay button {
+  background-color: #00000000;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.overlay button:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s;
+}
+
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translate(-100%);
+  }
+}
+
+@media(max-width: 412px){
+  #Projects{
+    font-size: 20px;
+  }
+  .projects-slide img {
+    height: 25vh;
+  }
+  .linkProjects:hover img {
+    height: 28vh;
+  }
+  .overlay button{
+    font-size: 0.6em;
+    padding: 15px;
+  }
+}
