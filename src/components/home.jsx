@@ -9,7 +9,7 @@ export function Home() {
 
   return (
     <>
-      <div className="container">
+      <div className="container" id='Home'>
         <div className="row">
           <div className="column">
             <img src={mac} alt="" />
