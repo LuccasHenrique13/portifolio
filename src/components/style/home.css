@@ -14,7 +14,7 @@
 }
 
 .column img{
-  width: 60em;
+  width: 90%;
   padding: 0px 20px 20px 90px;
 }
 
@@ -88,7 +88,7 @@
   }
 
   .column img{
-    width: 60rem;
+    width: 90%;
     padding: 0;
   }
 
