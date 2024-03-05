@@ -1,6 +1,6 @@
 .titleprojects{
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .projects{
@@ -37,9 +37,12 @@
 }
 
 .projects-slide img {
+  -webkit-box-shadow: 0px 0px 4px #ffffff;
+  -moz-box-shadow: 0px 0px 4px #ffffff;
+  box-shadow: 0px 0px 4px #ffffff;
   height: 50vh;
   margin: 0 40px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: 0.6s;
 }
 
@@ -84,7 +87,7 @@
   }
 }
 
-@media(max-width: 412px){
+@media(max-width: 414px){
   #Projects{
     font-size: 20px;
   }

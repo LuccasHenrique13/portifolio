@@ -21,7 +21,7 @@ header a:hover{
 
 .logo{
   font-weight: 600;
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .logo:hover{
@@ -31,5 +31,13 @@ header a:hover{
 @media(max-width: 1092px){
   header{
     margin-bottom: 10vh;
+  }
+}
+
+@media(max-width: 414px){
+  header a{
+    margin: 0;
+    text-align: center;
+    padding: 15px;
   }
 }

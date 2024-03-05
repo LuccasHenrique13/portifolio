@@ -6,10 +6,8 @@ export function Navbar(){
     <>
     <header>
       <a href="#Sobre">Sobre</a>
-      <a href="#Projects">Projetos</a>
       <a className="logo" href="">花</a>
-      <a href="">Novidades</a>
-      <a href="">Contato</a>
+      <a href="#Projects">Projetos</a>
     </header>
     </>
   );
