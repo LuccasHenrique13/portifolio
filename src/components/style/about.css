@@ -60,7 +60,7 @@ align-items: center;
   }
 }
 
-@media(max-width: 412px){
+@media(max-width: 414px){
   .contentabout{
     text-align: left;
   }
